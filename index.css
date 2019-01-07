@@ -2,6 +2,8 @@ body {
   padding-top: 5rem;
   position: relative;
 }
- .navbar{
-    margin-bottom: 50px !important;
+.main-content {
+	position: relative;
+  	height: 250px;
+  	overflow: auto;
 }
