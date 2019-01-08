@@ -1,6 +1,9 @@
 .main-content {
 	position: relative;
-  	height: 250px;
-  	overflow: auto;
+  	height: 40rem;
+  	overflow-y: scroll;
+    padding-top: 5rem; 
 }
-
+#godown{
+   height: 60px;
+}
