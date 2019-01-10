@@ -12,66 +12,69 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- custom fonts for this template -->
+   <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat" rel="stylesheet">
+
+    
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-    
+      
+      
+  
   </head>
 
-  <body>
-    <nav id="navbar" class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
+    
+      <!--navbar-->
+      <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
         <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="#fat">@fat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mdo">@mdo</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#one">one</a>
-                <a class="dropdown-item" href="#two">two</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#three">three</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div id="nav-icon2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-            </li>
-        </ul>
+        </button>
         
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mdo">Projects</a>
+                </li>
+
+            </ul>
+        </div>
     </nav>
 
-    <main role="main" class="pt-5 container-fluid">
-        <div class="main-content" data-spy="scroll" data-target="#navbar" data-offset="0">
+    <!-- home page image -->  
+    <div class="parallax img-fluid"></div>
+      
+    <!--main-Content todo: container just for each link-->
+    <div class="main-content container-fluid" > 
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col">
+                <h4 id="experience">experience</h4>
+                <br>
+                <p>I am not good, but I am trying.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien neque, vulputate in turpis in, fermentum pellentesque dolor. Duis fringilla nisi id justo commodo, id imperdiet sapien consequat. Curabitur laoreet tincidunt risus, a eleifend mi hendrerit sed. Nam elementum suscipit orci, et ultrices turpis tempor eu. Maecenas eget arcu dapibus odio euismod vulputate eleifend quis lacus. Sed ut augue turpis. Phasellus at massa augue. Mauris tellus leo, rutrum eget neque sit amet, hendrerit interdum sapien. Phasellus posuere at tortor sit amet lacinia. 
+                </p>
+            </div>
+            <div class="col-1"></div>
             
-            <h4 id="fat">@fat</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien neque, vulputate in turpis in, fermentum pellentesque dolor. Duis fringilla nisi id justo commodo, id imperdiet sapien consequat. Curabitur laoreet tincidunt risus, a eleifend mi hendrerit sed. Nam elementum suscipit orci, et ultrices turpis tempor eu. Maecenas eget arcu dapibus odio euismod vulputate eleifend quis lacus. Sed ut augue turpis. Phasellus at massa augue. Mauris tellus leo, rutrum eget neque sit amet, hendrerit interdum sapien. Phasellus posuere at tortor sit amet lacinia. </p>
-            <p>Pellentesque consequat, nisi eget blandit accumsan, enim nunc tristique orci, vel placerat velit dui id odio. Cras semper nisi bibendum risus rhoncus auctor. Etiam ac tellus at velit tincidunt hendrerit sed ut mi. Sed vel metus vitae ex venenatis gravida lacinia ut mauris. Pellentesque vehicula, sem eu vehicula lobortis, magna nisi gravida nisi, at bibendum turpis tortor ac massa. Cras vel tempus elit. Sed mi mi, placerat quis fringilla non, lobortis a metus. Nulla eget orci et arcu varius consectetur sed in dolor. Sed sed ligula id lectus accumsan ornare non quis erat. Fusce leo lacus, vehicula eget velit imperdiet, feugiat imperdiet risus. Suspendisse potenti.</p>
-            <p>Integer nisi felis, tempus vitae sapien ut, efficitur tempus dolor. Curabitur risus mauris, cursus eget convallis ut, ullamcorper id sem. Vivamus lectus nunc, efficitur sed euismod in, egestas eu diam. Phasellus congue diam eu feugiat pellentesque. Phasellus ac leo pharetra, viverra felis eu, feugiat purus. Nunc tempus mi ac nunc rhoncus porta. Sed arcu mi, gravida non pharetra eu, pharetra et felis. Morbi elementum odio dignissim, hendrerit enim id, lobortis diam. Donec vitae rhoncus dolor. Quisque in blandit ante. Donec tincidunt nibh eget massa sagittis viverra. Aenean sed tempor lectus, id vestibulum mauris. Nulla rutrum dignissim arcu, id faucibus urna congue convallis.</p>
-            <p> vitae ullamcorper tortor. Ut eget egestas ligula, eu elementum orci. Morbi blandit non tellus faucibus imperdiet. Fusce vel vestibulum metus. Curabitur suscipit, leo eu dictum porta, purus erat auctor metus, vel dapibus orci nisl at dolor. Integer a dolor elit. Morbi consectetur pharetra facilisis. Ut leo nunc, laoreet nec lobortis vitae, varius id enim. Cras placerat leo et blandit viverra. Sed maximus nec urna vitae egestas. Suspendisse at gravida leo. Curabitur dignissim accumsan sapien in tempor. Vivamus cursus urna sit amet porta euismod.</p>
-            <p>Nulla mi magna, semper non luctus sed, vehicula eget justo. Sed ac justo eget augue accumsan pretium sed non lorem. Curabitur ullamcorper turpis ac lacus vestibulum pharetra. Sed eros enim, aliquam sit amet ligula vitae, fermentum semper tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ac interdum urna. Donec mauris eros, vehicula ut libero non, convallis tristique nulla. Aenean egestas consequat blandit. Quisque quis nisl varius, efficitur sem ut, dignissim odio. Nulla et urna urna.</p>
-            <h4 id="mdo">@mdo</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien neque, vulputate in turpis in, fermentum pellentesque dolor. Duis fringilla nisi id justo commodo, id imperdiet sapien consequat. Curabitur laoreet tincidunt risus, a eleifend mi hendrerit sed. Nam elementum suscipit orci, et ultrices turpis tempor eu. Maecenas eget arcu dapibus odio euismod vulputate eleifend quis lacus. Sed ut augue turpis. Phasellus at massa augue. Mauris tellus leo, rutrum eget neque sit amet, hendrerit interdum sapien. Phasellus posuere at tortor sit amet lacinia. </p>
-            <p>Pellentesque consequat, nisi eget blandit accumsan, enim nunc tristique orci, vel placerat velit dui id odio. Cras semper nisi bibendum risus rhoncus auctor. Etiam ac tellus at velit tincidunt hendrerit sed ut mi. Sed vel metus vitae ex venenatis gravida lacinia ut mauris. Pellentesque vehicula, sem eu vehicula lobortis, magna nisi gravida nisi, at bibendum turpis tortor ac massa. Cras vel tempus elit. Sed mi mi, placerat quis fringilla non, lobortis a metus. Nulla eget orci et arcu varius consectetur sed in dolor. Sed sed ligula id lectus accumsan ornare non quis erat. Fusce leo lacus, vehicula eget velit imperdiet, feugiat imperdiet risus. Suspendisse potenti.</p>
-            <p>Integer nisi felis, tempus vitae sapien ut, efficitur tempus dolor. Curabitur risus mauris, cursus eget convallis ut, ullamcorper id sem. Vivamus lectus nunc, efficitur sed euismod in, egestas eu diam. Phasellus congue diam eu feugiat pellentesque. Phasellus ac leo pharetra, viverra felis eu, feugiat purus. Nunc tempus mi ac nunc rhoncus porta. Sed arcu mi, gravida non pharetra eu, pharetra et felis. Morbi elementum odio dignissim, hendrerit enim id, lobortis diam. Donec vitae rhoncus dolor. Quisque in blandit ante. Donec tincidunt nibh eget massa sagittis viverra. Aenean sed tempor lectus, id vestibulum mauris. Nulla rutrum dignissim arcu, id faucibus urna congue convallis.</p>
-            <p> vitae ullamcorper tortor. Ut eget egestas ligula, eu elementum orci. Morbi blandit non tellus faucibus imperdiet. Fusce vel vestibulum metus. Curabitur suscipit, leo eu dictum porta, purus erat auctor metus, vel dapibus orci nisl at dolor. Integer a dolor elit. Morbi consectetur pharetra facilisis. Ut leo nunc, laoreet nec lobortis vitae, varius id enim. Cras placerat leo et blandit viverra. Sed maximus nec urna vitae egestas. Suspendisse at gravida leo. Curabitur dignissim accumsan sapien in tempor. Vivamus cursus urna sit amet porta euismod.</p>
-            <p>Nulla mi magna, semper non luctus sed, vehicula eget justo. Sed ac justo eget augue accumsan pretium sed non lorem. Curabitur ullamcorper turpis ac lacus vestibulum pharetra. Sed eros enim, aliquam sit amet ligula vitae, fermentum semper tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ac interdum urna. Donec mauris eros, vehicula ut libero non, convallis tristique nulla. Aenean egestas consequat blandit. Quisque quis nisl varius, efficitur sem ut, dignissim odio. Nulla et urna urna.</p>
-            <h4 id="one">one</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien neque, vulputate in turpis in, fermentum pellentesque dolor. Duis fringilla nisi id justo commodo, id imperdiet sapien consequat. Curabitur laoreet tincidunt risus, a eleifend mi hendrerit sed. Nam elementum suscipit orci, et ultrices turpis tempor eu. Maecenas eget arcu dapibus odio euismod vulputate eleifend quis lacus. Sed ut augue turpis. Phasellus at massa augue. Mauris tellus leo, rutrum eget neque sit amet, hendrerit interdum sapien. Phasellus posuere at tortor sit amet lacinia. </p>
-            <p>Pellentesque consequat, nisi eget blandit accumsan, enim nunc tristique orci, vel placerat velit dui id odio. Cras semper nisi bibendum risus rhoncus auctor. Etiam ac tellus at velit tincidunt hendrerit sed ut mi. Sed vel metus vitae ex venenatis gravida lacinia ut mauris. Pellentesque vehicula, sem eu vehicula lobortis, magna nisi gravida nisi, at bibendum turpis tortor ac massa. Cras vel tempus elit. Sed mi mi, placerat quis fringilla non, lobortis a metus. Nulla eget orci et arcu varius consectetur sed in dolor. Sed sed ligula id lectus accumsan ornare non quis erat. Fusce leo lacus, vehicula eget velit imperdiet, feugiat imperdiet risus. Suspendisse potenti.</p>
-            <p>Integer nisi felis, tempus vitae sapien ut, efficitur tempus dolor. Curabitur risus mauris, cursus eget convallis ut, ullamcorper id sem. Vivamus lectus nunc, efficitur sed euismod in, egestas eu diam. Phasellus congue diam eu feugiat pellentesque. Phasellus ac leo pharetra, viverra felis eu, feugiat purus. Nunc tempus mi ac nunc rhoncus porta. Sed arcu mi, gravida non pharetra eu, pharetra et felis. Morbi elementum odio dignissim, hendrerit enim id, lobortis diam. Donec vitae rhoncus dolor. Quisque in blandit ante. Donec tincidunt nibh eget massa sagittis viverra. Aenean sed tempor lectus, id vestibulum mauris. Nulla rutrum dignissim arcu, id faucibus urna congue convallis.</p>
-            <p> vitae ullamcorper tortor. Ut eget egestas ligula, eu elementum orci. Morbi blandit non tellus faucibus imperdiet. Fusce vel vestibulum metus. Curabitur suscipit, leo eu dictum porta, purus erat auctor metus, vel dapibus orci nisl at dolor. Integer a dolor elit. Morbi consectetur pharetra facilisis. Ut leo nunc, laoreet nec lobortis vitae, varius id enim. Cras placerat leo et blandit viverra. Sed maximus nec urna vitae egestas. Suspendisse at gravida leo. Curabitur dignissim accumsan sapien in tempor. Vivamus cursus urna sit amet porta euismod.</p>
-            <p>Nulla mi magna, semper non luctus sed, vehicula eget justo. Sed ac justo eget augue accumsan pretium sed non lorem. Curabitur ullamcorper turpis ac lacus vestibulum pharetra. Sed eros enim, aliquam sit amet ligula vitae, fermentum semper tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ac interdum urna. Donec mauris eros, vehicula ut libero non, convallis tristique nulla. Aenean egestas consequat blandit. Quisque quis nisl varius, efficitur sem ut, dignissim odio. Nulla et urna urna.</p>
-            <h4 id="two">two</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien neque, vulputate in turpis in, fermentum pellentesque dolor. Duis fringilla nisi id justo commodo, id imperdiet sapien consequat. Curabitur laoreet tincidunt risus, a eleifend mi hendrerit sed. Nam elementum suscipit orci, et ultrices turpis tempor eu. Maecenas eget arcu dapibus odio euismod vulputate eleifend quis lacus. Sed ut augue turpis. Phasellus at massa augue. Mauris tellus leo, rutrum eget neque sit amet, hendrerit interdum sapien. Phasellus posuere at tortor sit amet lacinia. </p>
-            <p>Pellentesque consequat, nisi eget blandit accumsan, enim nunc tristique orci, vel placerat velit dui id odio. Cras semper nisi bibendum risus rhoncus auctor. Etiam ac tellus at velit tincidunt hendrerit sed ut mi. Sed vel metus vitae ex venenatis gravida lacinia ut mauris. Pellentesque vehicula, sem eu vehicula lobortis, magna nisi gravida nisi, at bibendum turpis tortor ac massa. Cras vel tempus elit. Sed mi mi, placerat quis fringilla non, lobortis a metus. Nulla eget orci et arcu varius consectetur sed in dolor. Sed sed ligula id lectus accumsan ornare non quis erat. Fusce leo lacus, vehicula eget velit imperdiet, feugiat imperdiet risus. Suspendisse potenti.</p>
-            <p>Integer nisi felis, tempus vitae sapien ut, efficitur tempus dolor. Curabitur risus mauris, cursus eget convallis ut, ullamcorper id sem. Vivamus lectus nunc, efficitur sed euismod in, egestas eu diam. Phasellus congue diam eu feugiat pellentesque. Phasellus ac leo pharetra, viverra felis eu, feugiat purus. Nunc tempus mi ac nunc rhoncus porta. Sed arcu mi, gravida non pharetra eu, pharetra et felis. Morbi elementum odio dignissim, hendrerit enim id, lobortis diam. Donec vitae rhoncus dolor. Quisque in blandit ante. Donec tincidunt nibh eget massa sagittis viverra. Aenean sed tempor lectus, id vestibulum mauris. Nulla rutrum dignissim arcu, id faucibus urna congue convallis.</p>
-            <p> vitae ullamcorper tortor. Ut eget egestas ligula, eu elementum orci. Morbi blandit non tellus faucibus imperdiet. Fusce vel vestibulum metus. Curabitur suscipit, leo eu dictum porta, purus erat auctor metus, vel dapibus orci nisl at dolor. Integer a dolor elit. Morbi consectetur pharetra facilisis. Ut leo nunc, laoreet nec lobortis vitae, varius id enim. Cras placerat leo et blandit viverra. Sed maximus nec urna vitae egestas. Suspendisse at gravida leo. Curabitur dignissim accumsan sapien in tempor. Vivamus cursus urna sit amet porta euismod.</p>
-            <p>Nulla mi magna, semper non luctus sed, vehicula eget justo. Sed ac justo eget augue accumsan pretium sed non lorem. Curabitur ullamcorper turpis ac lacus vestibulum pharetra. Sed eros enim, aliquam sit amet ligula vitae, fermentum semper tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ac interdum urna. Donec mauris eros, vehicula ut libero non, convallis tristique nulla. Aenean egestas consequat blandit. Quisque quis nisl varius, efficitur sem ut, dignissim odio. Nulla et urna urna.</p>
-            <h4 id="three">three</h4>
-            <p>...</p>
-       </div>
-
-    </main><!-- /.container -->
+            
+        </div>
+        
+        
+        
+   </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -81,4 +84,9 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
   </body>
+    <footer class="bg-secondary">
+     <p class=text-light>Photo by: 
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@dearjimena?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jimena"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jimena</span></a>
+     </p>
+    </footer>
 </html>
