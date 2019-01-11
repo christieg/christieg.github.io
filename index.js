@@ -12,10 +12,3 @@ $('body').scrollspy({
     offset: offset
   });
   
-// this code belongs to Jesse Couch on Code Pen https://codepen.io/designcouch/pen/Atyop
-$(document).ready(function(){
-	$('#nav-icon2').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
