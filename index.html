@@ -31,10 +31,10 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <i class="navbar-toggler-icon"></i>
   </button>
-  <div class="collapse navbar-collapse" id="navbarContent">
-    <a class="navbar-brand" href="#">christie</a>
-    <ul class="navbar-nav mr-auto nav-pills">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+    <a class="navbar-brand" href="#">home</a>
+    <ul class="navbar-nav">
+      <li>
         <a class="nav-link" href="#experience">experience</a>
       </li>
     </ul>
@@ -42,7 +42,17 @@
 </nav>
 
     <!-- home page image -->  
-    <div class="parallax img-fluid"></div>
+    <div class="parallax container-fluid img-fluid ">
+        <div class="row flex-container">
+            <div class="col-4"></div>
+            <div class="col">
+                <h2>CHRISTIE GUTIERREZ</h2>
+                <div class="divider"></div>
+                <p>back-end software engineer, artist, tea lover </p>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
       
     <!--main-Content todo: container just for each link-->
     <div class="main-content container-fluid" > 
@@ -50,6 +60,7 @@
             <div class="col-1"></div>
             <div class="col">
                 <div id="experience">
+                    <img class="img-fluid" src="/images/experience.svg"/>
                     <h4>experience</h4>
                     <br>
                     <p>I am not good, but I am trying.</p>
@@ -69,7 +80,7 @@
                     
                 </div>
                 
-                <div class="footer"></div>
+
             </div>
             <div class="col-1"></div>
             
@@ -79,6 +90,11 @@
         
         
    </div>
+      <div id=footer>
+            <p>Photo by: 
+            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@lianamikah?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Liana Mikah"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Liana Mikah</span></a>
+            </p>
+        </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -88,9 +104,5 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
   </body>
-    <footer class="bg-secondary">
-     <p class=text-light>Photo by: 
-        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@dearjimena?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jimena"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jimena</span></a>
-     </p>
-    </footer>
+        
 </html>

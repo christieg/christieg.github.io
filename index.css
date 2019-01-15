@@ -1,6 +1,7 @@
 body{
-    height: auto;
+    height: 5000px;
     background-color:antiquewhite;
+    position: relative;
 }
 .main-content {
     padding:1rem;
@@ -9,9 +10,29 @@ body{
 .box
 {
     float:left;
-    height: 10px;
-    width: 15px;
+    height: 30px;
+    width: 30px;
     
+}
+.flex-container
+{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h2
+{
+    color:antiquewhite;
+    text-shadow: 3px 2px 2px #9c92a3;
+    letter-spacing: 2px;
+    
+}
+.divider
+{
+    height: 5px;
+    width: 50%;
+    background-color:#e8d4d0
 }
 #color1
 {
@@ -44,23 +65,27 @@ body{
 /*parallax image*/
 .parallax {
     
-    background-image: url("./images/tes.jpg");
+    background-image: url("./images/pinktea.jpg");
 
     
-    height: 500px;
+    height: 800px;
    
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0px -400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+img
+{
+    justify-content: center;
+}
 h4
 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Lora', serif; 
     font-weight: 700;
+    color:#734b5e
 
 }
 p
@@ -71,14 +96,22 @@ p
     
    
 }
-.footer
+li:hover
 {
-   
-    right: 0;
-    bottom: 0;
-    left: 0;
-     position:absolute;
-    width:100%;
+    background-color: #907dda;
+    background: rgba(0,0,0,0.15);
+}
+.active
+{
+    /*background-color: #372248;*/
+    box-shadow:  0 -3px 0 0 inset;
+}
+#footer
+{
     text-align: center;
+    background-color: #4c4b63;
+    position:absolute;
+    bottom: 0;
+    width:100%;
     
 }
