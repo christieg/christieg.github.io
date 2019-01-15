@@ -1,4 +1,9 @@
 
+html{
+    height:100%;
+    scroll-behavior: smooth;
+
+}
 body{
     height: 5000px;
     background-color:antiquewhite;
@@ -70,10 +75,10 @@ h2
     background-image: url("./images/pinktea.jpg");
 
     
-    height: 800px;
+    height: 100vh;
    
     background-attachment: fixed;
-    background-position: 0px -400px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -11,4 +11,4 @@ $('body').scrollspy({
     target: '#navbar',
     offset: offset
   });
-  
+
