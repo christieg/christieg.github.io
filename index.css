@@ -9,6 +9,8 @@ body{
     background-color:antiquewhite;
     position: relative;
     scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+    font-weight:200;
     
 }
 
@@ -31,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-h2
+.title
 {
     color:antiquewhite;
     text-shadow: 3px 2px 2px #9c92a3;
@@ -44,26 +46,7 @@ h2
     width: 50%;
     background-color:#e8d4d0
 }
-#color1
-{
-    background-color:#5d5550
-}
-#color2
-{
-    background-color:#9bc689
-}
-#color3
-{
-    background-color:#b3cfdd
-}
-#color4
-{
-    background-color:#e8d4d0
-}
-#color5
-{
-    background-color:#fba493
-}
+
 
 .nav-pills{
     color: #ccb1ad;
@@ -89,14 +72,22 @@ img
 {
     justify-content: center;
 }
-h4
+h1
 {
     text-align: center;
-    font-size: 2.5rem;
     font-family: 'Lora', serif; 
     font-weight: 700;
     color:#734b5e
 
+}
+.jobDate
+{
+    text-align: left;
+}
+.jobRole
+{
+    font-weight: 800;
+    
 }
 p
 {
@@ -106,6 +97,10 @@ p
     
    
 }
+.jobDate{
+    font-style:italic;
+}
+
 li:hover
 {
     background-color: #907dda;
