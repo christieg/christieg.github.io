@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <!--<link rel="icon" href="../../../../favicon.ico">-->
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Christie Gutierrez</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
       
+    <!--- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
       
   
   </head>
@@ -28,18 +30,26 @@
     
       <!--navbar-->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="navbar-toggler-icon"></i>
-  </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-    <a class="navbar-brand" href="#">home</a>
-    <ul class="navbar-nav">
-      <li>
-        <a class="nav-link" href="#experience">experience</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <a class="navbar-brand" href="#">home</a>
+        <ul class="navbar-nav">
+            <li>
+                <a class="nav-link" href="#skills">skills</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#projects">projects</a>
+
+            </li>
+
+            <li>
+                <a class="nav-link" href="#experience">experience</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
 
     <!-- home page image -->  
     <div class="parallax flex-container mr-1 ml-1">
@@ -55,13 +65,64 @@
     </div>
       
     <!--main-Content todo: row for each link-->
-    <div class="main-content container-fluid" > 
-        <div class="row mr-1 ml-1">
+    <div class="main-content container-fluid row" > 
+        <div class="row m-1 mb-1">
+            
+            
+            
+            <!-- SKILLS -->
+            <div class="container-fluid" id="skills">
+                <img class="img-fluid" src="./images/flower.jpg">
+                <h1>skills</h1>
+                <p>some icons or like cool bars that represent</p>
+            
+            </div>
+            <!-- END SKILLS -->
+            <!-- PROJECTS-->
+            <div class="container-fluid" id="projects">
+                <img class="img-fluid" src="/images/projects.png">
+                <h1>projects</h1>
+                <p>I don't have any projects...yet!</p>
+                    
+                <p>Check out my GitHub!</p> <i class="fab fa-github-alt fa-2x"></i>
+
+                
+                <!-- This is will be filled in later! -->
+                <!--
+               <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <img class="card-img-top" src="./images/fox.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A blurb about this project</p>
+                        <a href="#" class="btn btn-primary">Check it out!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <img class="card-img-top" src="./images/city.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A blurb about this project</p>
+                        <a href="#" class="btn btn-primary">Check it out!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                -->
+
+            </div>
+            <!-- END PROJECTS -->
+            
+            <!-- EXPERIENCE -->
                 <div id="experience" class="container-fluid">
                     <img class="img-fluid" src="/images/experience.png"/>
                     <h1>experience</h1>
                     <br>
-                    
+                    <!-- JOB 1 -->
+                    <div id = "job1">
                     <div class="row jobRole">
                         <div class="col">
                             <h2>Software Engineer</h2>
@@ -85,19 +146,20 @@
                         
                         </ul>
                     </div>
-                    
-                    
-                </div>           
+                </div>
+                <!-- END JOB1 -->    
+            </div>
+            <!-- END EXPERIENCE -->
+            
+            
+            
+            
         </div>
         
         
         
    </div>
-      <div id=footer>
-            <p>Photo by: 
-            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@lianamikah?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Liana Mikah"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Liana Mikah</span></a>
-            </p>
-        </div>
+      
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -107,5 +169,27 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
   </body>
+    <footer id="footer" class="text-light">
+
+            <table id="iconRow">
+                <tr>
+                    <td>
+
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </td>
+                    <td>
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </td>
+                    <td>
+                        <i class="fab fa-codepen fa-2x"></i>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <p>home photo by: 
+                    <a href="https://unsplash.com/@lianamikah?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Liana Mikah">Liana Mikah</a>
+                </p>
+            </div>
+    </footer>
         
 </html>
