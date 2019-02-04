@@ -23,24 +23,7 @@ i
 {
     padding: 5px;
 }
-i:hover
-{
-    background: #b585b1;
-    border-radius:50%;
-    -ms-transition:1s;
-    -moz-transition:1s;
-    -webkit-transition:1s;
-    transition:1s;
-}
-a:hover
-{  
-    background: #b585b1;
-    -ms-transition:.75s;
-    -moz-transition:.75s;
-    -webkit-transition:.75s;
-    transition:.75s;
 
-}
 .box
 {
     float:left;
@@ -90,10 +73,7 @@ a:hover
     background-repeat: no-repeat;
     background-size: cover;
 }
-img
-{
-    justify-content: center;
-}
+
 h1
 {
     text-align: center;
@@ -102,13 +82,7 @@ h1
     color:#734b5e
 
 }
-#experience{
-    /*height:100vh;*/
-    
-}
-#projects{
-    /*height:100vh;*/
-}
+
 .jobDate
 {
     text-align: left;
@@ -131,13 +105,54 @@ p
 
 li:hover
 {
-    background-color: #907dda;
     background: rgba(0,0,0,0.15);
 }
+.iconLink:hover
+{
+    background: #b585b1;
+    border-radius:50%;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s;
+}
+link:hover
+{  
+    background: #b585b1;
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
+    transition:.75s;
+
+}
+
+img
+{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+    img{
+       width: 100%
+
+    }
+}
+@media screen and (min-width: 801px) {
+  
+    img
+    {
+        max-width:70vw;
+    }
+  
+}
+
+
 .active
 {
-    /*background-color: #372248;*/
     box-shadow:  0 -3px 0 0 inset;
+    
 }
 #footer
 {
@@ -151,7 +166,7 @@ li:hover
 
     
 }
-#projects, #experience, #skills
+#projects, #experience, #skills, #aboutme
 {
     height:100vh;
 }

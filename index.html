@@ -37,6 +37,9 @@
         <a class="navbar-brand" href="#">home</a>
         <ul class="navbar-nav">
             <li>
+                <a class="nav-link" href="#aboutme">about me</a>
+            </li>
+            <li>
                 <a class="nav-link" href="#skills">skills</a>
             </li>
             <li>
@@ -65,26 +68,45 @@
     </div>
       
     <!--main-Content todo: row for each link-->
-    <div class="main-content container-fluid row" > 
-        <div class="row m-1 mb-1">
+    <div class="main-content container-fluid px-4 px-lg-5"  > 
             
+            <!--ABOUT ME -->
+            <div class = "container-fluid row flex-container" id="aboutme">
+                <div class="col-md-6">
+                <h1>about me</h1>
+                <img  class="img-fluid" src="./images/aboutme.png">
+                </div>
+                <div class="col-md-6">
+                
+                <h3 class="font-weight-bold text-center">
+                    Hey there!
+                </h3>
+                <p class="text-center">
+                    I'm Christie Gutierreza back-end software engineer. Right now, my background consists of back-end C++ work, software testing, and scripting work. I am currently working towards catering my portfolio to full-stack software development. In the future, I aspire to be a software architect. My current hobbies include learning new things in tech (using Pluralsight, freeCodeCamp, books, etc), drawing, painting, and playing video games. I am also a HUGE tea enthausiast and cat lover! <i class="far fa-grin"></i>
+                </p>
+                </div>
+                
             
+            </div>
+            
+            <!-- END ABOUT ME -->
             
             <!-- SKILLS -->
             <div class="container-fluid" id="skills">
-                <img class="img-fluid" src="./images/flower.jpg">
+                <!--<img src="./images/skills.png">-->
                 <h1>skills</h1>
-                <p>some icons or like cool bars that represent</p>
+                <p>some icons or like cool bars that represent my sweet, sweet skills</p>
             
             </div>
             <!-- END SKILLS -->
             <!-- PROJECTS-->
-            <div class="container-fluid" id="projects">
-                <img class="img-fluid" src="/images/projects.png">
+            <div class="container" id="projects">
+                <!--<img src="/images/projects.png">-->
                 <h1>projects</h1>
                 <p>I don't have any projects...yet!</p>
                     
-                <p>Check out my GitHub!</p> <i class="fab fa-github-alt fa-2x"></i>
+                <p>Check out my GitHub!</p> 
+                <a href="https://github.com/christieg"><i class="iconLink fab fa-github-alt fa-2x"></i></a>
 
                 
                 <!-- This is will be filled in later! -->
@@ -118,7 +140,7 @@
             
             <!-- EXPERIENCE -->
                 <div id="experience" class="container-fluid">
-                    <img class="img-fluid" src="/images/experience.png"/>
+                    <img src="/images/experience.png"/>
                     <h1>experience</h1>
                     <br>
                     <!-- JOB 1 -->
@@ -150,11 +172,15 @@
                 <!-- END JOB1 -->    
             </div>
             <!-- END EXPERIENCE -->
+            <!-- CONTACT ME -->
+            <div class="container-fluid" id="contactme">
+                <h1>contact me!</h1>
+        
+            </div>
             
             
             
-            
-        </div>
+        
         
         
         
@@ -175,13 +201,13 @@
                 <tr>
                     <td>
 
-                        <i class="fab fa-linkedin-in fa-2x"></i>
+                        <i class="iconLink fab fa-linkedin-in fa-2x"></i>
                     </td>
                     <td>
-                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="iconLink fab fa-instagram fa-2x"></i>
                     </td>
                     <td>
-                        <i class="fab fa-codepen fa-2x"></i>
+                        <i class="iconlink fab fa-codepen fa-2x"></i>
                     </td>
                 </tr>
             </table>
