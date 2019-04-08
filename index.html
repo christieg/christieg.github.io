@@ -12,7 +12,7 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- custom fonts for this template -->
-   <link href="https://fonts.googleapis.com/css?family=Lora:700|Nunito:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Nunito:300" rel="stylesheet">
 
     
     <!-- Custom styles for this template -->
@@ -68,37 +68,41 @@
     </div>
       
     <!--main-Content todo: row for each link-->
-    <div class="main-content container-fluid px-4 px-lg-5"  > 
+    <div class="main-content"  > 
             
             <!--ABOUT ME -->
-            <div class = "container-fluid row flex-container" id="aboutme">
-                <div class="col-md-6">
-                <h1>about me</h1>
-                <img  class="img-fluid" src="./images/aboutme.png">
+            <div class = "container-fluid flex-container" id="aboutme">
+                <div class="row">
+                    <div class="col-md-6">
+                    <h1>about me</h1>
+                    <img  class="img-fluid" src="./images/aboutme.png">
+                    </div>
+                    <div class="col-md-6 flexCenter">
+
+                        <h3 class="font-weight-bold text-center">
+                            Hey there!
+                        </h3>
+                        <p class="text-center">
+                            I'm Christie Gutierrez, a back-end software engineer. Right now, my background consists of back-end C++ work, software testing, and scripting work. I am currently working towards catering my portfolio toward full-stack software development. In the future, I aspire to be a software architect. My current hobbies include learning new things in tech (using Pluralsight, freeCodeCamp, books, etc), drawing, painting, and playing video games. I am also a HUGE tea enthausiast and cat lover! <i class="far fa-grin"></i>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                
-                <h3 class="font-weight-bold text-center">
-                    Hey there!
-                </h3>
-                <p class="text-center">
-                    I'm Christie Gutierrez, a back-end software engineer. Right now, my background consists of back-end C++ work, software testing, and scripting work. I am currently working towards catering my portfolio to full-stack software development. In the future, I aspire to be a software architect. My current hobbies include learning new things in tech (using Pluralsight, freeCodeCamp, books, etc), drawing, painting, and playing video games. I am also a HUGE tea enthausiast and cat lover! <i class="far fa-grin"></i>
-                </p>
-                </div>
-                
             
             </div>
             
             <!-- END ABOUT ME -->
             
             <!-- SKILLS -->
-            <div class="container-fluid row" id="skills">
+            <div class="container-fluid flexCenter" id="skills">
                 <!--<img src="./images/skills.png">-->
-                <div class="col-md-3 title">
-                    <h1>skills</h1>
-                </div>
-                <div class="col-md-8 flex-container">
-                    maybe a lil bar chart
+                <div class="row">
+                    <div class="col">
+                        <h1>my skills</h1>
+                        <canvas id="myChart" width="500" height="500"></canvas>
+                    </div>
+                    
+
+                    
                 </div>
             
             </div>
@@ -106,76 +110,88 @@
 
             
             <!-- EXPERIENCE -->
-                <div id="experience" class="container-fluid">
-                    <img src="/images/experience.png"/>
-                    <h1>experience</h1>
-                    <br>
-                    <!-- JOB 1 -->
-                    <div id = "job1">
-                    <div class="row jobRole">
-                        <div class="col">
-                            <h2>Software Engineer</h2>
-                        
+            <div id="experience" class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="/images/experience.png"/>
+                            <h1>experience</h1>
                         </div>
-
-                    </div>
-                    <div class="row jobInfo">
-                        <div class="col-md-8">
-                            <h5>Lockheed Martin Aeronautics,  Fort Worth</h5>
-                        
-                        </div>
-                        <div class="col-md-4 jobDate">
-                        <h5 class="text-md-right">August 2016 - July 2018</h5>
-                    </div>
-                    </div>
                     
-                    <div class="row jobDesc">
-                        <ul>
-                        <li>responsibilities here</li>
-                        
-                        </ul>
+                        <br>
+                        <!--job history -->
+                        <div class="col-md-8">
+                            <!-- JOB 1 -->
+                            <div id = "job1 row">
+                            <div class="jobRole col">
+                                    <h2>Software Engineer</h2>
+                            </div>
+                            <div class="row jobInfo">
+                                <div class="col-md-8">
+                                    <h5>Lockheed Martin Aeronautics,  Fort Worth</h5>
+
+                                </div>
+                                <div class="col-md-4 jobDate">
+                                <h5 class="text-md-right font-italic">August 2016 - July 2018</h5>
+                            </div>
+                            </div>
+
+                            <div class="row jobDesc">
+                                <ul>
+                                <li>responsibilities here</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END JOB1 --> 
                     </div>
+                    <!-- END JOB HISTORY-->
                 </div>
-                <!-- END JOB1 -->    
             </div>
             <!-- END EXPERIENCE -->
             
             <!-- PROJECTS-->
-            <div class="container" id="projects">
-                <img src="/images/projects.png">
-                <h1>projects</h1>
-                <p>I don't have any projects...yet!</p>
+            <div class="container-fluid" id="projects">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="/images/projects.png">
+                        <h1>projects</h1>
+                    </div>
+                    <div class="col-md-8 text-center">
+                      
+                            <p>I don't have any projects...yet!</p>
+
+                            <p>Check out my GitHub!</p> 
+                        
+                    </div>
+
+
+                    <!-- This is will be filled in later! -->
+                    <!--
+                   <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./images/fox.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A blurb about this project</p>
+                            <a href="#" class="btn btn-primary">Check it out!</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <img class="card-img-top" src="./images/city.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A blurb about this project</p>
+                            <a href="#" class="btn btn-primary">Check it out!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    -->
                     
-                <p>Check out my GitHub!</p> 
-                
-
-                
-                <!-- This is will be filled in later! -->
-                <!--
-               <div class="row">
-                  <div class="col-sm-6">
-                    <div class="card">
-                      <img class="card-img-top" src="./images/fox.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">A blurb about this project</p>
-                        <a href="#" class="btn btn-primary">Check it out!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card">
-                      <img class="card-img-top" src="./images/city.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">A blurb about this project</p>
-                        <a href="#" class="btn btn-primary">Check it out!</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                -->
-
             </div>
             <!-- END PROJECTS -->
         
@@ -200,7 +216,10 @@
     <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./assets/js/vendor/popper.min.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+    <script src=".\assets\js\vendor\patternomaly.js"></script>
     <script src="index.js"></script>
+      
   </body>
     <footer id="footer" class="text-light">
 
