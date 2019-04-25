@@ -5,44 +5,103 @@ console.log(offset);
 $('body').scrollspy({
     target: '#navbar',
     offset: offset
-  });
-
-// skill chart stuff
-
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ["C++", "Linux", "Python", "C#", "Unity", "HTML", "CSS"],
-        datasets: [{
-            label: 'Years of Experience',
-            data: [2, 2, 1, .5, .5, .1, .1],
-            backgroundColor: [
-                pattern.draw('square', '#ff6384'),
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
 });
+
+// canvas.js stuff
+
+window.onload = function () {
+
+    $(document).ready(function () {
+      var bubbleChart = new d3.svg.BubbleChart({
+        supportResponsive: true,
+        //container: => use @default
+        size: 600,
+        //viewBoxSize: => use @default
+        innerRadius: 600 / 3.5,
+        //outerRadius: => use @default
+        radiusMin: 50,
+        //radiusMax: use @default
+        //intersectDelta: use @default
+        //intersectInc: use @default
+        //circleColor: use @default
+        data: {
+          items: [
+            {text: "Java", count: "1"},
+            {text: "C#", count: "1"},
+            {text: "Python", count: "1"},
+            {text: "HTML", count: ".2"},
+            {text: "CSS", count: "1"},
+            {text: "Python", count: "1"},
+            {text: "C/C++", count: "1"},
+            {text: "Unity", count: ".5"},
+          ],
+          eval: function (item) {return item.count;},
+          classed: function (item) {return item.text.split(" ").join("");}
+        },
+        plugins: [
+            {
+                name: "central-click",
+                options: {
+                  text: "year(s)",
+                  style: {
+                    "font-size": "12px",
+                    "font-style": "italic",
+                    "font-family": "Source Sans Pro, sans-serif",
+                    //"font-weight": "700",
+                    "text-anchor": "middle",
+                    "fill": "white"
+                  },
+                  attr: {dy: "65px"},
+            }
+          },
+          {
+            name: "lines",
+            options: {
+              format: [
+                {// Line #0
+                  textField: "count",
+                  classed: {count: true},
+                  style: {
+                    "font-size": "28px",
+                    "font-family": "Source Sans Pro, sans-serif",
+                    "text-anchor": "middle",
+                    fill: "white"
+                  },
+                  attr: {
+                    dy: "0px",
+                    x: function (d) {return d.cx;},
+                    y: function (d) {return d.cy;}
+                  }
+                },
+                {// Line #1
+                  textField: "text",
+                  classed: {text: true},
+                  style: {
+                    "font-size": "14px",
+                    "font-family": "Source Sans Pro, sans-serif",
+                    "text-anchor": "middle",
+                    fill: "white"
+                  },
+                  attr: {
+                    dy: "20px",
+                    x: function (d) {return d.cx;},
+                    y: function (d) {return d.cy;}
+                  }
+                }
+              ],
+              centralFormat: [
+                {// Line #0
+                  style: {"font-size": "50px"},
+                  attr: {}
+                },
+                {// Line #1
+                  style: {"font-size": "30px"},
+                  attr: {dy: "40px"}
+                }
+              ]
+            }
+          }]
+      });
+});
+
+}
