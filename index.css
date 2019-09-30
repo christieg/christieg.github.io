@@ -1,20 +1,18 @@
-
-html{
-    height:100%;
-  
-
-}
 body{
+    height: 5000px;
+    background-color:antiquewhite;
     position: relative;
-    scroll-behavior: smooth;
-    font-family: 'Nunito', sans-serif;
-    font-weight:300;
+}
+.main-content {
+    padding:1rem;
     
 }
-
-
-i{
-    padding: 5px;
+.box
+{
+    float:left;
+    height: 30px;
+    width: 30px;
+    
 }
 .flex-container
 {
@@ -23,13 +21,39 @@ i{
     justify-content: center;
     align-items: center;
 }
+h2
+{
+    color:antiquewhite;
+    text-shadow: 3px 2px 2px #9c92a3;
+    letter-spacing: 2px;
+    
+}
 .divider
 {
     height: 5px;
     width: 50%;
     background-color:#e8d4d0
 }
-
+#color1
+{
+    background-color:#5d5550
+}
+#color2
+{
+    background-color:#9bc689
+}
+#color3
+{
+    background-color:#b3cfdd
+}
+#color4
+{
+    background-color:#e8d4d0
+}
+#color5
+{
+    background-color:#fba493
+}
 
 .nav-pills{
     color: #ccb1ad;
@@ -44,158 +68,50 @@ i{
     background-image: url("./images/pinktea.jpg");
 
     
-    height: 100vh;
+    height: 800px;
    
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0px -400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-h1
+img
+{
+    justify-content: center;
+}
+h4
 {
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-family: 'Lora', serif; 
     font-weight: 700;
-    font-size: 3em;
-    color:#451b13;
-    letter-spacing: 4px;
+    color:#734b5e
 
 }
-
 p
 {
     
     font-family: 'Nunito', sans-serif;
     font-weight:200;
+    
    
 }
-
 li:hover
 {
+    background-color: #907dda;
     background: rgba(0,0,0,0.15);
 }
-.iconLink
-{
-    color:white;
-}
-.iconLink:hover
-{
-    background: #b585b1;
-    border-radius:50%;
-    -ms-transition:1s;
-    -moz-transition:1s;
-    -webkit-transition:1s;
-    transition:1s;
-    color: whitesmoke;
-}
-.link
-{
-    color:white;
-}
-.link:hover
-{  
-    background: #b585b1;
-    -ms-transition:.75s;
-    -moz-transition:.75s;
-    -webkit-transition:.75s;
-    transition:.75s;
-    color: black;
-
-}
-
-img
-{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-}
-
-@media screen and (max-width: 800px) {
-    img{
-       width: 100%
-
-    }
-}
-@media screen and (min-width: 801px) {
-  
-    img
-    {
-        max-width:70vw;
-    }
-  
-}
-
-
 .active
 {
+    /*background-color: #372248;*/
     box-shadow:  0 -3px 0 0 inset;
-    
 }
-td
-{
-    text-align: center;
-
-}
-.icon
-{
-    border-radius:50%;
-    background-color:lightpink;
-}
-h3
-{
-    letter-spacing: 2px;
-}
-
 #footer
 {
-    width:100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #4c4b63;
-    font-size: .75em
-
-    
-}
-.flexCenter
-{
-    
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-}
-.bubbleChart {
-  min-height: 30px;
-  min-width: 30px;
-  max-width: 370px;
-  max-height: 920px;
-
-}
-
-#projects, #experience, #skills, #aboutme
-{
-    height:100vh;
-   
-}
-
-#skills, #projects
-{
-    background-color: #ddbcb8;
-    
-}
-#aboutme, #experience, #contactme
-{
-    background-color:#FFE2D0;
-}
-#projects
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
+    position:absolute;
+    bottom: 0;
+    width:100%;
     
 }
