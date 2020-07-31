@@ -6,7 +6,6 @@ html{
 }
 body{
     position: relative;
-    scroll-behavior: smooth;
     font-family: 'Nunito', sans-serif;
     font-weight:300;
     
@@ -34,10 +33,11 @@ i{
 .nav-pills{
     color: #ccb1ad;
 }
+/*
 .navbar
 {
    background: linear-gradient(hsla(0, 0%, 0%, 0.8), transparent)
-}
+}*/
 /*parallax image*/
 .parallax {
     
@@ -168,17 +168,10 @@ h3
     align-self: center;
     align-items: center;
 }
-.bubbleChart {
-  min-height: 30px;
-  min-width: 30px;
-  max-width: 370px;
-  max-height: 920px;
-
-}
 
 #projects, #experience, #skills, #aboutme
 {
-    min-height:100%;
+    min-height:100vh;
    
 }
 
@@ -199,56 +192,12 @@ h3
    
     
 }
-
-/* 
-BUTTONS 
-TODO: Put this in a different file.
-*/
-
-a.button2 {
-  background-color: white;
-  color: black;
- text-decoration: none;
-}
-.button2:hover{
- color: #000000;
- background-color: #FFFFFF;
+#container
+{
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
 }
 
-/* From: https://fdossena.com/index.php?p=html5cool/buttons/i.frag */
-.button1 {
- text-decoration: none;
- display: inline-block;
- padding: 0.35em 1.2em;
- border: 0.1em solid #FFFFFF;
- margin: 0 0.3em 0.3em 0;
- border-radius: 0.12em;
- box-sizing: border-box;
- font-weight: 300;
- color: #FFFFFF;
- text-align: center;
- transition: all 0.2s;
-}
-.button1:hover{
- color: #000000;
- background-color: #FFFFFF;
-}
-@media all and (max-width:30em){
- .button1{
-  display:block;
-  margin:0.4em auto;
- }
-}
-.bouncy{
- animation:bouncy 5s infinite linear;
- position:relative;
-}
-@keyframes bouncy {
- 0%{top:0em}
- 40%{top:0em}
- 43%{top:-0.9em}
- 46%{top:0em}
- 48%{top:-0.4em}
- 50%{top:0em}
- 100%{top:0em;}
-}
+

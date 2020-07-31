@@ -7,101 +7,40 @@ $('body').scrollspy({
     offset: offset
 });
 
-// canvas.js stuff
 
-window.onload = function () {
 
-    $(document).ready(function () {
-      var bubbleChart = new d3.svg.BubbleChart({
-        supportResponsive: true,
-        //container: => use @default
-        size: 600,
-        //viewBoxSize: => use @default
-        innerRadius: 600 / 3.5,
-        //outerRadius: => use @default
-        radiusMin: 50,
-        //radiusMax: use @default
-        //intersectDelta: use @default
-        //intersectInc: use @default
-        //circleColor: use @default
-        data: {
-          items: [
-            {text: "Java", count: "1"},
-            {text: "C#", count: "1"},
-            {text: "Python", count: "1"},
-            {text: "HTML", count: ".2"},
-            {text: "CSS", count: "1"},
-            {text: "Python", count: "1"},
-            {text: "C/C++", count: "1"},
-            {text: "Unity", count: ".5"},
-          ],
-          eval: function (item) {return item.count;},
-          classed: function (item) {return item.text.split(" ").join("");}
-        },
-        plugins: [
-            {
-                name: "central-click",
-                options: {
-                  text: "year(s)",
-                  style: {
-                    "font-size": "12px",
-                    "font-style": "italic",
-                    "font-family": "Source Sans Pro, sans-serif",
-                    //"font-weight": "700",
-                    "text-anchor": "middle",
-                    "fill": "white"
-                  },
-                  attr: {dy: "65px"},
-            }
-          },
-          {
-            name: "lines",
-            options: {
-              format: [
-                {// Line #0
-                  textField: "count",
-                  classed: {count: true},
-                  style: {
-                    "font-size": "28px",
-                    "font-family": "Source Sans Pro, sans-serif",
-                    "text-anchor": "middle",
-                    fill: "white"
-                  },
-                  attr: {
-                    dy: "0px",
-                    x: function (d) {return d.cx;},
-                    y: function (d) {return d.cy;}
-                  }
-                },
-                {// Line #1
-                  textField: "text",
-                  classed: {text: true},
-                  style: {
-                    "font-size": "14px",
-                    "font-family": "Source Sans Pro, sans-serif",
-                    "text-anchor": "middle",
-                    fill: "white"
-                  },
-                  attr: {
-                    dy: "20px",
-                    x: function (d) {return d.cx;},
-                    y: function (d) {return d.cy;}
-                  }
-                }
-              ],
-              centralFormat: [
-                {// Line #0
-                  style: {"font-size": "50px"},
-                  attr: {}
-                },
-                {// Line #1
-                  style: {"font-size": "30px"},
-                  attr: {dy: "40px"}
-                }
-              ]
-            }
-          }]
-      });
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+// If you aren't using any module loader, progressbar.js exposes
+// global variable: window.ProgressBar
+var bar = new ProgressBar.Circle('#container', {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'bounce',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 2 },
+  to: { color: '#333', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
 });
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '2rem';
 
-}
+bar.animate(.7);  // Number from 0.0 to 1.0
