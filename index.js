@@ -17,7 +17,7 @@ var bar = new ProgressBar.Circle('#container', {
   color: '#aaa',
   // This has to be the same size as the maximum width to
   // prevent clipping
-  strokeWidth: 4,
+  strokeWidth: 10,
   trailWidth: 1,
   easing: 'bounce',
   duration: 1400,
@@ -43,4 +43,4 @@ var bar = new ProgressBar.Circle('#container', {
 bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar.text.style.fontSize = '2rem';
 
-bar.animate(.7);  // Number from 0.0 to 1.0
+bar.animate(.67);  // Number from 0.0 to 1.0
