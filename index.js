@@ -8,39 +8,51 @@ $('body').scrollspy({
 });
 
 
+function createProgressBar(node, percent)
+{
+    // progressbar.js@1.0.0 version is used
+    // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+    // If you aren't using any module loader, progressbar.js exposes
+    // global variable: window.ProgressBar
+    var bar = new ProgressBar.Circle(node, {
+      color: '#aaa',
+      // This has to be the same size as the maximum width to
+      // prevent clipping
+      strokeWidth: 5,
+      trailWidth: 1,
+      easing: 'bounce',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#aaa', width: 2 },
+      to: { color: '#333', width: 5 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
 
-// progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-// If you aren't using any module loader, progressbar.js exposes
-// global variable: window.ProgressBar
-var bar = new ProgressBar.Circle('#container', {
-  color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 10,
-  trailWidth: 1,
-  easing: 'bounce',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#aaa', width: 2 },
-  to: { color: '#333', width: 10 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + "%");
+        }
 
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
+      }
+    });
+    bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+    bar.text.style.fontSize = '2rem';
 
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
+    bar.animate(percent);  // Number from 0.0 to 1.0
+    
+}
 
-bar.animate(.67);  // Number from 0.0 to 1.0
+
+bars = []
+const skillbars = document.getElementsByClassName("skill-bar")
+for(let skillbar of skillbars)
+{
+    createProgressBar(skillbar, (Math.random() * 100)/100)
+
+}

@@ -7,12 +7,13 @@ html{
 body{
     position: relative;
     font-family: 'Nunito', sans-serif;
-    font-weight:300;
+    font-weight: 300;
     
 }
 
 
-i{
+i
+{
     padding: 5px;
 }
 .flex-container
@@ -33,19 +34,15 @@ i{
 .nav-pills{
     color: #ccb1ad;
 }
-/*
+
 .navbar
 {
    background: linear-gradient(hsla(0, 0%, 0%, 0.8), transparent)
-}*/
+}
 /*parallax image*/
 .parallax {
-    
     background-image: url("./images/pinktea.jpg");
-
-    
     height: 100vh;
-   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -192,7 +189,7 @@ h3
    
     
 }
-#container
+.skill-bar
 {
   margin: 20px;
   width: 200px;
