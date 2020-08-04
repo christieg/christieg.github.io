@@ -64,6 +64,7 @@ p {
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
   color: #9A9A9A;
+ 
   line-height: 1.5em;
 }
 
@@ -192,12 +193,14 @@ blockquote small {
 }
 
 /*     General overwrite     */
+/*
 body {
   color: #66615b;
   font-size: 14px;
   font-weight: 300;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
 }
+*/
 
 a {
   color: #51bcda;
@@ -2213,11 +2216,7 @@ textarea.form-control {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-.navbar-toggler {
-  margin-top: 19px;
-  margin-bottom: 19px;
-  border: 0;
-}
+
 .navbar-toggler .icon-bar {
   background-color: #FFFFFF;
 }

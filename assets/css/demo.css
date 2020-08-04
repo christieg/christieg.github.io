@@ -40,11 +40,13 @@
 .switch{
     margin-right: 20px;
 }
+/*
 #navbar-full .navbar{
     border-radius: 0 !important;
     margin-bottom: 0;
     z-index: 2;
 }
+*/
 .space{
     height: 130px;
     display: block;
@@ -70,6 +72,7 @@
 /*     position: relative; */
 
 }
+/*
 .navigation-example{
     background-image: url('../img/ilya-yakover.jpg');
     background-position: center center;
@@ -77,6 +80,7 @@
     background-attachment: fixed;
     margin-top:0;
 }
+*/
 #notifications{
     background-color: #FFFFFF;
     display: block;
@@ -215,9 +219,11 @@
 .logo-container .logo img{
     width: 100%;
 }
+/*
 .navbar-small .logo-container .brand{
     color: #333333;
 }
+*/
 .demo-header{
     background-size: cover;
     /*background-color: #FF8F5E;*/
@@ -754,6 +760,7 @@
 }
 
 
+/*
 .navbar-default.navbar-small .logo-container .brand{
     color: #333333;
 }
@@ -763,6 +770,7 @@
 .navbar-default.navbar-small .logo-container .brand{
     color: #333333;
 }
+*/
 .section-thin{
     padding-bottom: 0;
 }
@@ -938,6 +946,7 @@
 .icon-class{
     fill: #75c3b6;
 }
+/*
 .navbar-header{
     min-width: 135px;
 }
@@ -946,6 +955,7 @@
     border-radius: 0;
     margin-bottom: 0px;
 }
+*/
 .download-area{
     margin-top: 30px;
 }

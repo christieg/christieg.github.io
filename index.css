@@ -1,20 +1,33 @@
-
-html{
-    height:100%;
-  
-
+/*COLOR PALLETTE*/
+:root {
+    --title-text-color: white;
+    --section-color-one: #4C3A3A;
+    --section-color-two: #5D4E51;
+    --footer-background-color: #22231B;
+    --footer-text-color: #C3B7B7;
+    --body-text-color: #E5E5E5;
+    --section-title-color: #F3BC8C;
+    --sub-section-title-color: #404040;
+    --pink-color: #F45B69;
+    --dark-text-color: #404040;
+    --dark-orange-color: #DA8E2E;
+    --light-orange-color: #FB8C48;
 }
+
 body{
     position: relative;
     font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    
+    font-weight: 400;
+    color: var(--body-text-color);   
 }
 
-
-i
-{
-    padding: 5px;
+/*parallax image*/
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .flex-container
 {
@@ -27,36 +40,46 @@ i
 .divider
 {
     height: 5px;
+    width: 50vw;
     background-color:#e8d4d0
+     
 }
 
-
-.nav-pills{
-    color: #ccb1ad;
-}
 
 .navbar
 {
-   background: linear-gradient(hsla(0, 0%, 0%, 0.8), transparent)
-}
-/*parallax image*/
-.parallax {
-    background-image: url("./images/pinktea.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*   background: linear-gradient(hsla(0, 0%, 0%, 1.0), transparent)*/
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(64,64,64,0.014443277310924318) 100%);
 
-h1
+}
+.nav-link
+{
+    
+    color: var(--dark-orange-color);
+    
+}
+.sub-section-title
+{
+    font-weight: 600;
+    text-align: center;
+    
+}
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px white;
+	   -moz-box-shadow: 0 8px 6px -6px white;
+	        box-shadow: 0 8px 6px -6px white;
+}
+.shadow {
+  filter:drop-shadow(5px 5px 10px #404040);
+}
+h1.section-title
 {
     text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
+    font-family: 'Sanchez';
     font-size: 3em;
-    color:#451b13;
     letter-spacing: 4px;
+    color: var(--section-title-color);
+    padding-bottom: 1em;
 
 }
 
@@ -68,38 +91,6 @@ p
    
 }
 
-li:hover
-{
-    background: rgba(0,0,0,0.15);
-}
-.iconLink
-{
-    color:white;
-}
-.iconLink:hover
-{
-    background: #b585b1;
-    border-radius:50%;
-    -ms-transition:1s;
-    -moz-transition:1s;
-    -webkit-transition:1s;
-    transition:1s;
-    color: whitesmoke;
-}
-.link
-{
-    color:white;
-}
-.link:hover
-{  
-    background: #b585b1;
-    -ms-transition:.75s;
-    -moz-transition:.75s;
-    -webkit-transition:.75s;
-    transition:.75s;
-    color: black;
-
-}
 
 img
 {
@@ -151,8 +142,8 @@ h3
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4c4b63;
-    font-size: .75em
+    font-size: .75em;
+    background-color: var(--footer-background-color)
 
     
 }
@@ -166,28 +157,22 @@ h3
     align-items: center;
 }
 
+/*
 #projects, #experience, #skills, #aboutme
 {
     min-height:100vh;
    
 }
+*/
 
 #skills, #projects
 {
-    background-color: #ddbcb8;
+    background-color: var(--section-color-one);
     
 }
-#aboutme, #experience, #contactme
+#aboutme, #experience, #contact-me
 {
-    background-color:#FFE2D0;
-}
-#projects
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    
+    background-color:var(--section-color-two);
 }
 .skill-bar
 {
@@ -195,6 +180,165 @@ h3
   width: 200px;
   height: 200px;
   position: relative;
+}
+
+/* CSS Timeline taken from https://codepen.io/tutsplus/pen/QNeJgR */
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+/*  background: #F45B69;*/
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+/*  background: #456990;*/
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: var(--body-text-color);
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #D7A57A;
+  filter:drop-shadow(5px 5px 10px #292929);
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #D7A57A transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #D7A57A;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #404040;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: var(--pink-color);
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--pink-color) transparent transparent;
+  }
 }
 
 

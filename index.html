@@ -16,11 +16,9 @@
 
 	<!--     Fonts and icons     -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
-<!--	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">-->
-	<link href="assets/css/nucleo-icons.css" rel="stylesheet" />
     
     <!-- custom fonts for this template -->
-   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Nunito:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez|Nunito:300,400" rel="stylesheet">
 
     
     <!-- Custom styles for this template -->
@@ -34,27 +32,26 @@
 
 <!--    navbar come here          -->
   <body data-spy="scroll" data-target="#navbarContent" data-offset="0">
-    <!-- todo: cHANGE TO navbar-dark? -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-dark">
+    <nav id="" class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class ="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="navbar-toggler-icon"></i>
+        <i class="fas fa-bars"></i>
         </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+          <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav">
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#home">home</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#aboutme">about me</a>
-                </li>
-                <li>
+                </li >
+                <li class="nav-item">
                     <a class="nav-link" href="#skills">skills</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#experience">experience</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#projects">projects</a>
 
                 </li>
@@ -70,43 +67,53 @@
 
 
 
-<div class="wrapper">
+<div class="wrapper one-edge-shadow">
     <!-- content come here     -->
-    <div id="home" class="page-header header-filter flex-container" data-parallax="true" style="background-image: url('./images/pinktea.jpg');">
-        <div class="row d-flex justify-content-center">
-            <!--<div class="col-4"></div>-->
-            <div class="col">
-                <h2>CHRISTIE GUTIERREZ</h2>
-                <div class="divider"></div>
-                <p>software engineer, artist, tea lover </p>
-            </div>
-            <!--<div class="col-4"></div>-->
-        </div>
-                
-        <div class="row pt-4">
-            <div class="col">
-                <a href="something" class="btn btn-outline-default btn-round"><i class="fas fa-download"></i>Download Resume</a>
-            
+    <div id="home" class="page-header header-filter" data-parallax="true" style="background-image: url('./images/code.jpg');">
+        <div class="container flexCenter">
+            <div class="row ">
+                <!--<div class="col-4"></div>-->
+                <div class="col">
+                    <h1 class="title">CHRISTIE GUTIERREZ</h1>
+                    <div class="divider"></div>
+                    <h4 class="title">software engineer &#38; tea lover </h4>
+                </div>
             </div>
         </div>
     </div>
     <div class="main">
     <!--ABOUT ME -->
-    <div class = "section container-fluid flex-container" id="aboutme">
+    <div class = "section container-fluid" id="aboutme">
         <div class="row">
-            <div class="col-md-6">
-            <h1>about me</h1>
-            <img  class="img-fluid" src="./images/aboutme.png">
+            <div class="col-md-6 ">
+                <h1 class="section-title">about me</h1>
+                <img src="images/me1.jpg" class="img-circle img-no-padding img-responsive" alt="Rounded Image">
+                
             </div>
             <div class="col-md-6 flexCenter">
 
                 <h3 class="font-weight-bold text-center">
-                    Hey there!
+                    howdy!
                 </h3>
                 <p class="text-center">
-                    I'm Christie Gutierrez, a back-end software engineer. Right now, my background consists of back-end C++ work, software testing, and scripting work. I am currently working towards catering my portfolio toward full-stack software development. In the future, I aspire to be a software architect. My current hobbies include learning new things in tech (using Pluralsight, freeCodeCamp, books, etc), drawing, painting, and playing video games. I am also a HUGE tea enthausiast and cat lover! <i class="far fa-grin"></i>
+                    I'm Christie Gutierrez, a software engineer based in Dallas/Fort Worth Texas. My background consists of back-end C++ work, writing automated system tests in Python, software integration, and general linux scripting work with Bash. I aspire to be a full stack engineer. I am currently working towards catering my portfolio toward that. My current hobbies include learning new things in tech (using Pluralsight, freeCodeCamp, Hackerrank, books, etc), drawing, painting, working out and playing video games. I am also a HUGE tea enthausiast and cat lover! <i class="fas fa-cat"></i>
+                    
                 </p>
+                <table>
+                    <td>
+                        <a href="something" class="btn btn-outline-default btn-round"><i class="fas fa-download"></i> Download Resume</a>
+                        
+                    </td>
+                    <td><a href="#" class="btn btn-outline-default btn-round btn-just-icon"> <i class="fab fa-linkedin-in"></i> </a></td>
+                    <td><a href="#" class="btn btn-outline-default btn-round btn-just-icon"> <i class="fas fa-envelope"></i> </a></td>
+
+                
+                </table>
+                
+                
             </div>
+        </div>
+        
         </div>
     </div>
     <!-- END ABOUT ME -->
@@ -115,50 +122,44 @@
     <div class="section container-fluid" id="skills">
         <div class="row">
             <div class="col justify-content-center">
-                <h1>stats</h1>
+                <h1 class="section-title">stats</h1>
             </div>
         </div>
         <div class="row">
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
             <div class="skill-bar"></div>
-            <h4>Photoshop</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
+            <h4 class="sub-section-title">Photoshop</h4>
           </div>
         </div>
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
             <div class="skill-bar"></div>
             <h4>Illustrator</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
           </div>
         </div>
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> 
             <div class="skill-bar"></div>
             <h4>Flash</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
           </div>
         </div>
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
             <div class="skill-bar"></div>
             <h4>HTML5 / CSS3</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
           </div>
         </div>
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> 
             <div class="skill-bar"></div>
             <h4>jQuery</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
           </div>
         </div>
-        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+        <div class="flexCenter col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
           <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills">
             <div class="skill-bar"></div>
             <h4>PHP / MySQL</h4>
-            <p>Donec accumsan ligula vitae mag na curabitur id</p>
               </div>
         </div>
       </div>
@@ -169,62 +170,103 @@
     <!-- EXPERIENCE -->
     <div id="experience" class="section container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="/images/experience.png"/>
-                    <h1>experience</h1>
+                <div class="col">
+                    <!-- START TIMELINE -->
+                    <section class="intro">
+                      <div class="container">
+                        <h1 class="section-title">Experience</h1>
+                      </div>
+                    </section>
+
+                    <section class="timeline">
+                        <ul>
+                        <li >
+                          <div>
+                            <time>March 2018-Present</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <time>2018</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                               <h4>Mid-life crisis</h4>
+                            <time>2018</time> 
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <time>2016-2018</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                          </div>
+                        </li>
+
+                        <li>
+                          <div>
+                            <time>2015</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h4>University of Texas at Arlington</h4>
+                            <h6>Bachelors of Science in Computer Science</h6>
+                            <h5>GPA 3.5</h5>
+                            <time>2012-2016</time> 
+                          </div>
+                        </li>
+                        </ul>
+
+                    </section>
+                    <!--END TIMELINE -->
                 </div>
-                <!-- TODO: fill this with css timelines from code pen? -->
-        </div>
+            
+            </div>
     </div>
     <!-- END EXPERIENCE -->
     <!-- PROJECTS-->
     <div class="section container-fluid" id="projects">
+        <div class="row justify-content-center">
+            <div>
+                <h1 class="section-title">projects</h1>
+            </div>
+
+        </div>
         <div class="row">
-            <div class="col-md-4">
-                <img class="img-fluid" src="/images/projects.png">
-                <h1>projects</h1>
+            <div class="col flexCenter">
+                <h3>There's nothing here....yet!</h3>
             </div>
-            <div class="col-md-8 text-center">
+        </div>
+        <div class="row">
+            <div class="col flexCenter">
+                <h5>Check out my profiles on these websites:</h5>
+                <table id="iconRow">
+                    <tr>
 
-                <!--TODO: make this a material design card grid -->
-                <!-- boot strap card example -->
-
-               <div class="row">
-                  <div class="col-sm-6">
-                    <div class="card">
-                      <img class="card-img-top" src="./images/fox.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">A blurb about this project</p>
-                        <a href="#" class="btn btn-primary">Check it out!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card">
-                      <img class="card-img-top" src="./images/city.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">A blurb about this project</p>
-                        <a href="#" class="btn btn-primary">Check it out!</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        <td>
+                            <a href="#" class="btn btn-outline-default btn-round btn-just-icon">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://github.com/christieg" class="btn btn-outline-default btn-round btn-just-icon"><i class="
+                                fab fa-github"></i></a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://github.com/christieg" class="btn btn-outline-default btn-round btn-just-icon"><i class="
+                                fab fa-github"></i></a>
+                        
+                        
+                        </td>
+                    </tr>
+                </table>
+            
             </div>
+        
         </div>
     </div>
     <!-- END PROJECTS -->
-    
-
-
 </div>
-
-
-    
-    
-</div>
-
 
 
 <!-- Modal Bodies come here -->
@@ -237,32 +279,14 @@
 <footer id="footer" class="text-light">
     <div class="container">
         <div class="row justify-content-center">
-        <table id="iconRow">
-            <tr>
-                <td>
-
-                    <i class="iconLink fab fa-linkedin-in fa-2x"></i>
-                </td>
-                <td>
-                    <i class="iconLink fab fa-instagram fa-2x"></i>
-                </td>
-                <td>
-                    <i class="iconLink fab fa-codepen fa-2x"></i>
-                </td>
-                <td>
-                    <a target="_blank"href="https://github.com/christieg"><i class="iconLink fab fa-github-alt fa-2x"></i></a>
-                </td>
-            </tr>
-        </table>
+       
         </div>
         <div class="row justify-content-between">
 
             <div class="col">
-                <p>home photo by: 
-                    <a class= "link" target="_blank" href="https://unsplash.com/@lianamikah?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Liana Mikah">Liana Mikah</a>
-                </p>
+                <p><a target="_blank" href="https://unsplash.com/photos/MSN8TFhJ0is" target="_blank" rel="noopener noreferrer">Home Photo</a></p>
             </div>
-            <div class="col"><p>arts from <a class="link" href="https://undraw.co/">undraw</a></p></div>
+            <div class="col"><p>arts from <a href="https://undraw.co/">undraw</a></p></div>
         </div>
     </div>
 </footer>
